@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">utilidades</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name = "frist_label">Frist</string>
+    <string name = "second_label">Second</string>
+    <string name = "third_label">Third</string>
+
+    <string name = "to_frist_button">To Frist</string>
+    <string name = "to_second_button">To Second</string>
+    <string name = "to_third_button">To Third</string>
+
+    <string name = "error_label">ERROR</string>
+    <string name = "dialog" >Please type your name</string>
+
+
 </resources>

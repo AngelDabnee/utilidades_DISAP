@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">utilidades</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name = "frist_label">Primera</string>
+    <string name = "second_label">Segunda</string>
+    <string name = "third_label">Tercera</string>
+
+    <string name = "to_frist_button">A la Primera</string>
+    <string name = "to_second_button">A la Segunda</string>
+    <string name = "to_third_button">A la Tercera</string>
+
+
+    <string name = "error_label">ERROR</string>
+    <string name = "dialog" >Por Favor Introduce tú Nombre</string>
+
+
+</resources>
