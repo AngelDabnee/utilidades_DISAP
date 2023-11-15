@@ -8,6 +8,8 @@
     <string name = "frist_label">Primera</string>
     <string name = "second_label">Segunda</string>
     <string name = "third_label">Tercera</string>
+    <string name="four_label">Cuatro</string>
+
 
     <string name = "to_frist_button">A la Primera</string>
     <string name = "to_second_button">A la Segunda</string>
@@ -16,6 +18,10 @@
 
     <string name = "error_label">ERROR</string>
     <string name = "dialog" >Por Favor Introduce tú Nombre</string>
+
+    <!--fragmento cuatro-->
+    <string name= "to_four_button">Al Cuarto</string>
+
 
 
 </resources>

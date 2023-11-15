@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_fristFragment_to_secondFragment"
             app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_fristFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -33,6 +36,22 @@
         tools:layout="@layout/fragment_third" >
         <action
             android:id="@+id/action_thirdFragment_to_fristFragment"
+            app:destination="@id/fristFragment">
+            <argument
+                android:name = "data"
+                android:defaultValue = ""
+                app:argType = "string"
+                />
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/fourFragment"
+        android:name="AngelDabnee.com.FourFragment"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" >
+        <action
+            android:id="@+id/action_fourFragment_to_fristFragment"
             app:destination="@id/fristFragment" />
     </fragment>
 </navigation>
