@@ -15,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
 
         logo.setOnClickListener()
         {
-            var i = Intent(this,MainActivity::class.java)
+            var i = Intent(this,AuthActivity::class.java)
             startActivity(i)
             finish()
             //Toast.makeText(this,"Pique al logo",Toast.LENGTH_SHORT).show()

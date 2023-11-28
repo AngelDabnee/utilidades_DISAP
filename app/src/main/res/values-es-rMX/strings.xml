@@ -22,6 +22,15 @@
     <!--fragmento cuatro-->
     <string name= "to_four_button">Al Cuarto</string>
 
+    <string name="txtname">Nombre</string>
+    <string name="txtpassword">Contraseña</string>
+
+
+    <string name="btnLogin">Entrar</string>
+
+    <string name="hideUserName">Escriba su Nombre</string>
+    <string name="hideUserPassword">Escriba su Contraseña</string>
+
 
 
 </resources>

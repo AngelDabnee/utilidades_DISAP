@@ -19,7 +19,17 @@
     <string name="dialog">Please type your name</string>
 
     <!--fragmento cuatro-->
-    <string name= "to_four_button">To Four</string>
+    <string name="to_four_button">To Four</string>
+
+
+    <string name="txtname">Name</string>
+    <string name="txtpassword">Password</string>
+
+
+    <string name="btnLogin">Login</string>
+
+    <string name="hideUserName">Enter Username</string>
+    <string name="hideUserPassword">Enter Password</string>
 
 
 
