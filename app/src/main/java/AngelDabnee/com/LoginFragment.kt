@@ -1,5 +1,7 @@
 package AngelDabnee.com
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,7 +12,7 @@ import android.widget.Button
 import android.widget.EditText
 
 class LoginFragment : Fragment() {
-
+    private var users: List<User> = emptyList()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,16 +26,36 @@ class LoginFragment : Fragment() {
 
         val btnSumbit = view.findViewById<Button>(R.id.btnSubmit)
 
-        btnSumbit.setOnClickListener{
-            if (user.text != null){
-                if (password.text != null){
-                    Toast.makeText(context, "Validar si existe", Toast.LENGTH_SHORT).show()
+        btnSumbit.setOnClickListener {
+            valUser()
+            if (user.text != null && password.text != null) {
+                val email = user.text.toString()
+                val password = password.text.toString()
+
+                if (checkUser(email,password,users)) {
+                    Toast.makeText(context,"LoginCorrecto",Toast.LENGTH_SHORT).show()
+                    val i = Intent(view.context,MainActivity::class.java)
+                    startActivity(i)
+                    activity?.finish()
+
+                }else{
+                    Toast.makeText(context,
+                        "Las credenciales no coinciden",
+                        Toast.LENGTH_SHORT).show()
                 }
             }
         }
-
-
         return view
     }
-
+    private fun checkUser(username:String,password:String,users:List<User>):Boolean{
+        return users.any{users->username==users.email && password == users.password}
+    }
+    fun valUser(){
+        users= listOf(
+            User(1,"angeldabnee@gmail.com","AngelDabnee"),
+            User(2,"glenda@gmail.com","glendamorales"),
+            User(1,"acuna@gmail.com","luisacuna"),
+            User(1,"rubenvega@gmail.com","rubenvega")
+        )
+    }
 }
