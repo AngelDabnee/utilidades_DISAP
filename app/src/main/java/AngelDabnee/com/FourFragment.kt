@@ -11,6 +11,8 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class FourFragment : Fragment() {
@@ -22,6 +24,15 @@ class FourFragment : Fragment() {
         val view =  inflater.inflate(R.layout.fragment_four, container, false)
 
         var recyclerView = view.findViewById<RecyclerView>(R.id.countriesRecycle)
+        val fab = view.findViewById<FloatingActionButton>(R.id.fab_new)
+
+        fab.setOnClickListener{
+            val bottomSheetDialog = BottomSheetDialog(view.context)
+            val parentView: View = layoutInflater.inflate(R.layout.bsd_new_country,null)
+            bottomSheetDialog.setContentView(parentView)
+            bottomSheetDialog.show()
+        }
+
         initData()
 
         /*Ñinea completa*/
